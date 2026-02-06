@@ -1,4 +1,4 @@
-import Navbar from "./composents/Navbar"
+import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import Inscription from "./pages/Inscription"
 import Photos from "./pages/Photos"
