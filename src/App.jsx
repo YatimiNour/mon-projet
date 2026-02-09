@@ -1,8 +1,9 @@
-import Navbar from "./components/Navbar"
-import Home from "./pages/Home"
-import Inscription from "./pages/Inscription"
-import Photos from "./pages/Photos"
-import { Routes, Route } from "react-router-dom"
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Inscription from "./pages/Inscription";
+import Photos from "./pages/Photos";
+import Rater from "./pages/rater";   // ✅ IMPORT IMPORTANT
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/inscription" element={<Inscription />} />
           <Route path="/photos" element={<Photos />} />
+          <Route path="/rater" element={<Rater />} /> {/* ✅ NOUVELLE ROUTE */}
         </Routes>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
